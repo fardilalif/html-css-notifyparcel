@@ -169,6 +169,7 @@ ul {
   width: 100%;
   max-width: var(--fixed-width);
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -246,6 +247,7 @@ Navbar
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     justify-self: end;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
   .nav-links a {
@@ -422,6 +424,7 @@ Services
   .services-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
@@ -492,6 +495,26 @@ Registration form
 }
 .form-row {
   margin-bottom: 1rem;
+}
+.form-input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-input::-moz-placeholder {
+  text-transform: capitalize;
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-input:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: inherit;
+  color: var(--grey-400);
+}
+.form-input::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: inherit;
+  color: var(--grey-400);
 }
 .form-input::placeholder {
   text-transform: capitalize;
