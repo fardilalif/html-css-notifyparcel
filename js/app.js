@@ -31,10 +31,9 @@ scrollLinks.forEach((link) => {
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     //
-    let position = element.offsetTop - 90;
-
+    let position = element.offsetTop - 92;
     window.scrollTo({
-      left: 0,
+      // left: 0,
       // top: element.offsetTop,
       top: position,
       behavior: "smooth",

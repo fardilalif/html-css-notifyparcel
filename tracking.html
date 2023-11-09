@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <!-- style css -->
     <link rel="stylesheet" href="style.css" />
-    <title>NotifyParcel || Home</title>
+    <title>NotifyParcel || Tracking</title>
   </head>
 
   <body>
@@ -53,13 +53,13 @@
         <!-- nav links -->
         <ul class="nav-links">
           <li>
-            <a href="#home" class="scroll-link">home</a>
+            <a href="index.html#home">home</a>
           </li>
           <li>
-            <a href="#about" class="scroll-link">about</a>
+            <a href="index.html#about">about</a>
           </li>
           <li>
-            <a href="#services" class="scroll-link">services</a>
+            <a href="index.html#services">services</a>
           </li>
           <li>
             <a href="login.html">login</a>
@@ -80,13 +80,13 @@
         <!-- nav links -->
         <ul class="sidebar-links">
           <li>
-            <a href="#home" class="scroll-link">home</a>
+            <a href="index.html#home">home</a>
           </li>
           <li>
-            <a href="#about" class="scroll-link">about</a>
+            <a href="index.html#about">about</a>
           </li>
           <li>
-            <a href="#services" class="scroll-link">services</a>
+            <a href="index.html#services">services</a>
           </li>
           <li>
             <a href="login.html">login</a>
@@ -127,102 +127,54 @@
     </aside>
     <!-- end of sidebar -->
 
-    <!-- header -->
-    <header class="hero" id="home">
-      <div class="section-center hero-center">
-        <article class="hero-info">
-          <div class="underline"></div>
-          <h1>welcome to NotifyParcel</h1>
-          <h4>parcel management made easy</h4>
-          <a href="register.html" class="btn hero-btn">register now</a>
-        </article>
-        <!-- end of hero info -->
+    <!-- tracking -->
+    <section class="section-center register">
+      <form class="form">
+        <div class="form-row">
+          <label for="trackingNumber" class="form-label">Tracking Number</label>
+          <input
+            type="text"
+            id="trackingNumber"
+            placeholder="Enter your tracking number"
+            class="form-input"
+          />
+        </div>
+      </form>
 
-        <article class="hero-img">
-          <img src="./images/main-bg.png" class="img hero-img" alt="" />
-        </article>
-      </div>
-    </header>
-    <!-- end of header -->
-
-    <!-- about -->
-    <section class="section about" id="about">
-      <div class="section-title about-title">
-        <h2>about us</h2>
-        <div class="underline"></div>
-      </div>
-
-      <div class="section-center about-center">
-        <article class="about-img">
-          <img src="./images/about-img.png" class="img" alt="" />
-        </article>
-        <article class="about-info">
-          <h3>explore the difference</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut rerum
-            inventore temporibus praesentium aliquam laboriosam sed culpa
-            eligendi, voluptatum aliquid?
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut rerum
-            inventore temporibus praesentium aliquam laboriosam sed culpa
-            eligendi, voluptatum aliquid?
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- end of about -->
-
-    <!-- services -->
-    <section class="section services" id="services">
-      <div class="section-title about-title">
-        <h2>our services</h2>
-        <div class="underline"></div>
-      </div>
-
-      <div class="section-center services-center">
-        <!-- single service -->
-        <article class="service">
-          <i class="fa-solid fa-box service-icon"></i>
-          <h4>parcel tracking & management</h4>
-          <div class="underline"></div>
-          <p>
-            Stay in control of your shipments with our advanced parcel tracking
-            and management system. From origin to destination, monitor every
-            step of your parcels' journey in real-time.
-          </p>
-        </article>
-        <!-- end of single service -->
-        <!-- single service -->
-        <article class="service">
-          <i class="fa-solid fa-envelope service-icon"></i>
-          <h4>automated notifications</h4>
-          <div class="underline"></div>
-          <p>
-            Our system keeps you informed every step of the way. Receive
-            automated notifications for key updates, including parcel arrival
-            and successful pickups. Stay on top of your logistics with timely
-            alerts.
-          </p>
-        </article>
-        <!-- end of single service -->
-        <!-- single service -->
-        <article class="service">
-          <i class="fa-solid fa-person-running service-icon"></i>
-          <h4>customizable solutions</h4>
-          <div class="underline"></div>
-          <p>
-            We understand that every business is unique. That's why our Parcel
-            Management System is designed to be flexible and customizable.
-            Tailor the system to align with your specific workflow and
-            requirements, ensuring a seamless integration with your existing
-            processes.
-          </p>
-        </article>
-        <!-- end of single service -->
+      <div class="tracking">
+        <div class="track">
+          <span class="tracking-icon">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <div class="tracking-info">
+            <h5>Status: Created</h5>
+            <p>DATE: 12.10.2023</p>
+            <p>TIME: 16:00</p>
+          </div>
+        </div>
+        <div class="track">
+          <span class="tracking-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </span>
+          <div class="tracking-info">
+            <h5>Status: Arrived</h5>
+            <p>DATE: 12.10.2023</p>
+            <p>TIME: 16:00</p>
+          </div>
+        </div>
+        <div class="track">
+          <span class="tracking-icon">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+          </span>
+          <div class="tracking-info">
+            <h5>Status: Pickup</h5>
+            <p>DATE: 12.10.2023</p>
+            <p>TIME: 16:00</p>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- end of services -->
+    <!-- end of tracking -->
 
     <!-- footer -->
     <footer class="footer">
