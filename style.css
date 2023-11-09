@@ -246,7 +246,7 @@ Navbar
   }
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     justify-self: end;
     -moz-column-gap: 2rem;
@@ -541,9 +541,31 @@ Tracking
 =======================
 */
 .tracking {
-  width: 100%;
   max-width: var(--fixed-width);
 }
+.form-row-tracking {
+  position: relative;
+}
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  font-size: 25px;
+  color: var(--primary-500);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-row-tracking input {
+  padding: 5px 10px 5px 50px;
+  font-size: 18px;
+  line-height: 30px;
+  outline: 0;
+  display: block;
+  width: 100%;
+}
+
 .track {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -555,6 +577,7 @@ Tracking
   border: var(--radius);
   box-shadow: var(--shadow-2);
   margin-bottom: 2rem;
+  border-radius: var(--radius);
   transition: var(--transition);
 }
 .track:hover {
